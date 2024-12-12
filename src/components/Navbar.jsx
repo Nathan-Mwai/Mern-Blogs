@@ -17,6 +17,10 @@ const Navbar = () => {
             >
                 {open? 'X' : "☰" }
             </div>
+            {/* mobile link list */}
+            <div className={`w-full h-screen flex flex-col items-center justify-center absolute top-16 bg-[#e6e6ff] transition-all ease-in-out ${open ? '-right-0' : '-right-[100%]'}`}>
+                menu
+            </div>
         </div>
         {/* Menu Desktop */}
         <div className="hidden md:flex">D</div>
