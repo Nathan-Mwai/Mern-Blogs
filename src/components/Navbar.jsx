@@ -18,8 +18,14 @@ const Navbar = () => {
                 {open? 'X' : "☰" }
             </div>
             {/* mobile link list */}
-            <div className={`w-full h-screen flex flex-col items-center justify-center absolute top-16 bg-[#e6e6ff] transition-all ease-in-out ${open ? '-right-0' : '-right-[100%]'}`}>
-                menu
+            <div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 bg-[#e6e6ff] transition-all ease-in-out ${open ? '-right-0' : '-right-[100%]'}`}>
+            <a href="/">Home</a>
+            <a href="/">Trending</a>
+            <a href="/">Most popular</a>
+            <a href="/">About</a>
+            <a href="">
+                <button className="py-2 px-4 rounded-3xl bg-blue-500">Login 👍</button>
+            </a>
             </div>
         </div>
         {/* Menu Desktop */}
