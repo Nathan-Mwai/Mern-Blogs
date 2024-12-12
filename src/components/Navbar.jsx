@@ -23,7 +23,15 @@ const Navbar = () => {
             </div>
         </div>
         {/* Menu Desktop */}
-        <div className="hidden md:flex">D</div>
+        <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
+            <a href="/">Home</a>
+            <a href="/">Trending</a>
+            <a href="/">Most popular</a>
+            <a href="/">About</a>
+            <a href="">
+                <button className="py-2 px-4 rounded-3xl bg-blue-500">Login 👍</button>
+            </a>
+        </div>
     </section>
   )
 }
