@@ -27,28 +27,28 @@ const Navbar = () => {
             open ? "-right-0" : "-right-[100%]"
           }`}
         >
-          <a href="/">Home</a>
-          <a href="/">Trending</a>
-          <a href="/">Most popular</a>
-          <a href="/">About</a>
-          <a href="">
+          <Link to="/">Home</Link>
+          <Link to="/">Trending</Link>
+          <Link to="/">Most popular</Link>
+          <Link to="/">About</Link>
+          <Link to="">
             <button className="py-2 px-4 rounded-3xl bg-blue-500">
               Login 👍
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       {/* Menu Desktop */}
       <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
-        <a href="/">Home</a>
-        <a href="/">Trending</a>
-        <a href="/">Most popular</a>
-        <a href="/">About</a>
-        <a href="">
+        <Link to="/">Home</Link>
+        <Link to="/">Trending</Link>
+        <Link to="/">Most popular</Link>
+        <Link to="/">About</Link>
+        <Link to="">
           <button className="py-2 px-4 rounded-3xl bg-blue-500">
             Login 👍
           </button>
-        </a>
+        </Link>
       </div>
     </section>
   );
