@@ -7,7 +7,8 @@ const Navbar = () => {
     <section className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* logo */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <Image path='logo.png' alt="Lama logo" w={32} h={32}/>
+        {/* <Image path='logo.png' alt='code base w={32} h={32}'/> */}
+        <img src='/Nathan.webp' alt="Codebase logo" width={32} height={32}/>
         <span>CodebaseBlogs</span>
       </div>
       {/* Menu mobile */}
