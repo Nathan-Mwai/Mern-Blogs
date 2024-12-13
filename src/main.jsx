@@ -8,24 +8,36 @@ import {
   Route,
   Link,
 } from 'react-router-dom'
+import Homepage from './routes/Homepage.jsx'
+import PostListPage from './routes/PostListPage.jsx'
+import Write from './routes/Write.jsx'
+import LoginPage from './routes/LoginPage.jsx'
+import RegisterPage from './routes/RegisterPage.jsx'
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element:(
-      <div>
-        <h1>
-          Hello World
-        </h1>
-        <Link to="about">
-        About us
-        </Link>
-      </div>
-    )
+    element: <Homepage />,
   },
   {
-    path:"about",
-    element: <div>About</div>
+    path:"/posts",
+    element: <PostListPage />
+  },
+  {
+    path:"/:slug",
+    element: <PostListPage />
+  },
+  {
+    path:"/write",
+    element: <Write />
+  },
+  {
+    path:"/login",
+    element: <LoginPage />
+  },
+  {
+    path:"/register",
+    element: <RegisterPage />
   },
 ])
 
