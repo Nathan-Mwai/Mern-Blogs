@@ -1,9 +1,18 @@
 import { IKImage } from 'imagekitio-react'
 import React from 'react'
 
-const Image = () => {
+const Image = ({path, className, w, h, alt}) => {
   return (
-    <IKImage urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT} path="/logo.png" className="w-8 h-8" alt="logo" />
+    <IKImage
+    urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT}
+    path={path}
+    className={className}
+    loading='lazy'
+    // This is for low quality images
+    lqip={{ active: true, quality: 20 }}
+    width={w}
+    height={h}
+    alt={alt} />
   )
 }
 
