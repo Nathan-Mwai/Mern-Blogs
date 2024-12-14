@@ -21,7 +21,28 @@ const Homepage = () => {
           </p>
         </div>
         {/* animated button */}
-        <Link to="write"></Link>
+        <Link to="write">
+        <svg
+          viewBox="0 0 200 200"
+          width="200"
+          height="200"
+          className="text-lg tracking-widest"
+          >
+            <path
+              id="circlePath"
+              fill="none"
+              d="M 100, 100 m -75, 0 a 75, 75 0 1,1 150,0 a 75,75 0 1,1 -150,0"
+            />
+            <text>
+              <textPath href="#circlePath" startOffset="0%">
+                Write your Story .
+              </textPath>
+              <textPath href="#circlePath" startOffset="50%">
+                Share your Idea .
+              </textPath>
+            </text>
+        </svg>
+        </Link>
       </div>
       {/* <Featured Posts/> */}
       {/* <Post Lists/> */}
