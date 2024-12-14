@@ -9,3 +9,8 @@ body{
  overflow-x: hidden;
  font-family: 'Montserrat',sans-serif;
 }
+
+/* Adding the animation duration */
+.animatedButton{
+    animation-duration: 10000ms;
+}
