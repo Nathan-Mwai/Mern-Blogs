@@ -11,7 +11,7 @@ const Navbar = () => {
       {/* Using Link from React router-dom will make it got to the desired routes */}
       <Link to='/' className="flex items-center gap-4 text-2xl font-bold">
         {/* <Image path='logo.png' alt='code base w={32} h={32}'/> */}
-        <img src='/Nathan.webp' alt="Codebase logo" width={32} height={32}/>
+        <img src='/Nathan.webp' className="rounded-md" alt="Codebase logo" width={32} height={32}/>
         <span>CodebaseBlogs</span>
       </Link>
       {/* Menu mobile */}
