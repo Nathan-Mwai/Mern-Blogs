@@ -21,7 +21,8 @@ const FeaturedPosts = () => {
         </div>
         {/* other posts */}
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
-        
+        {/* second */}
+        <div className='flex justify-between gap-4'></div>
         </div>
     </div>
   )
